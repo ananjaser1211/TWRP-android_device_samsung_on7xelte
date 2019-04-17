@@ -60,6 +60,9 @@ TW_INCLUDE_NTFS_3G := true
 TW_NO_EXFAT_FUSE := true
 TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true
+TW_INCLUDE_FBE := true
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_INCLUDE_CRYPTO := true
 
 # Init properties from bootloader version, ex. model info
