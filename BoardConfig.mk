@@ -59,6 +59,7 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
 TW_NO_EXFAT_FUSE := true
 TW_EXTRA_LANGUAGES := true
+TW_USE_NEW_MINADBD := true
 TW_INCLUDE_CRYPTO := true
 
 # Init properties from bootloader version, ex. model info
