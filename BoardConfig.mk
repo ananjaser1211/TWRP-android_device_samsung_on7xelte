@@ -15,8 +15,12 @@
 #
 
 # Platform
+BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
+TARGET_SOC := exynos7870
+TARGET_BOOTLOADER_BOARD_NAME := universal7870
 TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
 
 # Architecture
 TARGET_ARCH := arm
@@ -44,6 +48,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TW_BRIGHTNESS_PATH := "/sys/devices/14800000.dsim/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
@@ -51,11 +56,6 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
-
-# Color fix
-TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
-
-# Encryption support
 TW_INCLUDE_CRYPTO := true
 
 # Init properties from bootloader version, ex. model info
